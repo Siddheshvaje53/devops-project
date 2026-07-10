@@ -49,7 +49,7 @@ variable "cluster_name" {
 variable "cluster_version" {
   description = "Kubernetes version"
   type        = string
-  default     = "1.30"
+  default     = "1.35"
 }
 
 variable "node_instance_type" {
@@ -76,3 +76,14 @@ variable "min_capacity" {
   default     = 1
 }
 
+variable "ec2_instance_name" {
+  description = "EC2 Instance"
+  type = string
+  default = "Cluster_EC2"  
+}
+
+variable "ami_id" {
+  description = "ami_id"
+  type = string
+  default = "ami-07a00cf47dbbc844c"
+}

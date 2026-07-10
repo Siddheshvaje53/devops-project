@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.0"
+  version = "6.6.1"
 
   name = "devops-vpc"
   cidr = var.vpc_cidr
@@ -15,4 +15,10 @@ module "vpc" {
   tags = {
     Environment = "dev"
   }
+}
+
+# Internet gateway
+resource "aws_internet_gateway" "igw" {
+  vpc_id = module.vpc.vpc_id
+  tags   = { Name = "tf-simple-igw" }
 }

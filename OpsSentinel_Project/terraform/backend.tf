@@ -1,6 +1,6 @@
 # S3 bucket for Terraform state
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "devops-terraform-state-12345"  # must be globally unique
+  bucket = "devops-terraform-state-56789"  # must be globally unique
 
   tags = {
     Name = "Terraform State Bucket"
