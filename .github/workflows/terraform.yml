@@ -8,9 +8,10 @@ on:
       - main
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: ap-south-1
   TF_VAR_upload_bucket_name: ${{ secrets.UPLOAD_BUCKET_NAME }}
-  TF_VAR_aws_region: us-east-1
+  TF_VAR_aws_region: ap-south-1
+
 
 jobs:
   terraform:
