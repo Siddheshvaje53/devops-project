@@ -18,4 +18,4 @@ variable "cloudfront_price_class" {
 variable "notification_email" {
   description = "Email to Notify"
   type = string
-}
+} 
